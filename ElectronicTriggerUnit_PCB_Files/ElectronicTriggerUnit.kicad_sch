@@ -1396,150 +1396,6 @@
 				)
 			)
 		)
-		(symbol "Diode:ESD5Zxx"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "ESD5Zxx"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-523"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd5z2.5t1-d.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "ESD Protection Diode, SOD-523"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "esd tvs unidirectional diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D?SOD?523*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ESD5Zxx_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "ESD5Zxx_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "GND_1"
 			(power)
 			(pin_numbers hide)
@@ -5047,22 +4903,10 @@
 		(uuid "850c3219-ae18-462d-8353-5607349e7ce1")
 	)
 	(junction
-		(at 149.86 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "881ae452-a4e0-4ac9-bb8f-da84a7c259c2")
-	)
-	(junction
 		(at 259.08 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d6e417f-d6d6-4886-86e4-0a95b7cd60f1")
-	)
-	(junction
-		(at 149.86 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95607131-7852-42cf-b4e4-9548477f5dac")
 	)
 	(junction
 		(at 40.64 88.9)
@@ -5187,16 +5031,6 @@
 	(no_connect
 		(at 78.74 46.99)
 		(uuid "eaa37d0d-e9df-4358-93de-2364dfbddc7f")
-	)
-	(wire
-		(pts
-			(xy 142.24 170.18) (xy 142.24 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02135ba8-2471-4b64-9f55-747f0b2675bd")
 	)
 	(wire
 		(pts
@@ -5397,16 +5231,6 @@
 			(type default)
 		)
 		(uuid "1c94c62c-5614-4b25-aa5f-a01080f49791")
-	)
-	(wire
-		(pts
-			(xy 142.24 177.8) (xy 142.24 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e54e2b2-4b3c-4f26-891d-3488731efb54")
 	)
 	(wire
 		(pts
@@ -6330,16 +6154,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 165.1) (xy 149.86 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bef9db39-faa8-4ff3-a6bf-5d7c86d20297")
-	)
-	(wire
-		(pts
 			(xy 196.85 137.16) (xy 196.85 138.43)
 		)
 		(stroke
@@ -6637,16 +6451,6 @@
 			(type default)
 		)
 		(uuid "f0313690-9120-4439-92c5-da1966bd6c03")
-	)
-	(wire
-		(pts
-			(xy 142.24 182.88) (xy 149.86 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f20416df-4444-49b4-ab4d-052fdedc9e13")
 	)
 	(wire
 		(pts
@@ -12181,75 +11985,6 @@
 			(project "PCBTRIGGERASSEMBLY"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:ESD5Zxx")
-		(at 142.24 173.99 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d4563d46-e201-4d01-9996-e3ba1c630898")
-		(property "Reference" "D3"
-			(at 144.78 172.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "824045812"
-			(at 144.78 175.2599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SamacSys:TVS_DIODE"
-			(at 137.795 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/824045812.pdf"
-			(at 142.24 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD Protection Diodes / TVS Diodes WE-TVS DFN1610-2L 12V 440pF 1Channel"
-			(at 142.24 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0b4e664-923c-44a3-b1ff-369abdeb081f")
-		)
-		(pin "2"
-			(uuid "21d94ad5-b2c7-4383-9cd9-5e9b09c7f5a7")
-		)
-		(instances
-			(project ""
-				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d"
-					(reference "D3")
 					(unit 1)
 				)
 			)
