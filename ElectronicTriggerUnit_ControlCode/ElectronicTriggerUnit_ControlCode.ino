@@ -10,6 +10,12 @@
 #define DEBOUNCETIME 20           //increase if debounce isn't properly handled
 #define SELECTORLEDTHRESHOLD 55   //led and phototransistor lottery here , hard to figure out without a serial connection 
 ////pins
+// FOR ATTINY816
+// int triggerPin = PIN_PB0;
+// int cyclePin = PIN_PA1;
+// int modePin = PIN_PB1;
+// int motorGroundPlane = PIN_PA5;
+// FOR ATTINY814
 int triggerPin = PIN_PB0;
 int cyclePin = PIN_PA1;
 int modePin = PIN_PB1;
