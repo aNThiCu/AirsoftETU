@@ -1,55 +1,61 @@
-//MotorStates
+//motor states
 #define STANDBY 0
 #define MOTORENABLE 1
 #define MOTORFULLPOWER 2
 #define MOTORDISABLE 3
-//SelectorStates
+//selector states
 #define SEMI 0
 #define AUTO 1
-//Parameters
-#define DEBOUNCETIME 20           //increase if debounce isn't properly handled
-#define SELECTORLEDTHRESHOLD 55   //led and phototransistor lottery here , hard to figure out without a serial connection 
 ////pins
-// FOR ATTINY816
+
+// FOR ATTINY816 ( latest stable)
 // int triggerPin = PIN_PB0;
 // int cyclePin = PIN_PA1;
 // int modePin = PIN_PB1;
 // int motorGroundPlane = PIN_PA5;
-// FOR ATTINY814
+
+// FOR ATTINY814 ( in_development )
 int triggerPin = PIN_PB0;
 int cyclePin = PIN_PA1;
 int modePin = PIN_PB1;
 int motorGroundPlane = PIN_PA5;
 //logic
 volatile int motorState = STANDBY;
-int selectorState = SEMI;
+int selectorState;
 //debounceTiming
 volatile unsigned long last_millis = 0;
 
 
 void setup() {
   //Input Init
-  pinMode(triggerPin, INPUT_PULLUP);
+  pinMode(triggerPin, INPUT);
   pinMode(cyclePin, INPUT);
   pinMode(modePin, INPUT);
   //Output Init
   pinMode(motorGroundPlane, OUTPUT);
   digitalWrite(motorGroundPlane,LOW);
-
+  //Parameters init
+  // selectorState=SEMI; //uncomment if you don't want/don't have a fire mode selector and comment the next line
+  mode_change();
+  //Interrupts init
   attachInterrupt(digitalPinToInterrupt(triggerPin), flag_trigger, FALLING);
   attachInterrupt(digitalPinToInterrupt(cyclePin), flag_cycle, RISING);
+  attachInterrupt(digitalPinToInterrupt(modePin), mode_change, CHANGE); // comment if you don't want/don't have a fire mode selector
 }
 
 void flag_trigger() {
-  if (motorState == STANDBY && millis() - last_millis > DEBOUNCETIME) {
+  if (motorState == STANDBY)
     motorState = MOTORENABLE;
-    last_millis = millis();
-  }
 }
 
 void flag_cycle() {
   if (motorState == MOTORFULLPOWER)
     motorState = MOTORDISABLE;
+}
+
+void mode_change(){
+  if(modePin == HIGH) selectorState = AUTO;
+  else selectorState = SEMI;
 }
 
 void motor_on() {
@@ -58,15 +64,13 @@ void motor_on() {
 }
 
 void motor_off() {
-  if (analogRead(modePin) <= SELECTORLEDTHRESHOLD) selectorState = SEMI;  //Comment these 2 lines if
-  else selectorState = AUTO;                                              //you don't want to use the selector
   switch (selectorState) {
     case SEMI:
       digitalWrite(motorGroundPlane, LOW);
       motorState = STANDBY;
       break;
     case AUTO:
-      if (digitalRead(triggerPin) == 1) {
+      if (digitalRead(triggerPin) == HIGH) {
         digitalWrite(motorGroundPlane, LOW);
         motorState = STANDBY;
       }

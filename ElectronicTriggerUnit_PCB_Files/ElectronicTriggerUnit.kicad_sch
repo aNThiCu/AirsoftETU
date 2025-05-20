@@ -8041,7 +8041,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "51R"
+		(property "Value" "100R"
 			(at 67.31 82.55 0)
 			(effects
 				(font
@@ -8571,7 +8571,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "91R"
+		(property "Value" "100R"
 			(at 67.31 128.2699 0)
 			(effects
 				(font
@@ -9033,7 +9033,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5K"
 			(at 42.418 83.1466 0)
 			(effects
 				(font
@@ -9396,7 +9396,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5K"
 			(at 42.418 123.7866 0)
 			(effects
 				(font
