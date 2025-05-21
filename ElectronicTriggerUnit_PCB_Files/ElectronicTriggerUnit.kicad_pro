@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.95,
-          "width": 0.9
+          "height": 2.0,
+          "width": 4.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -250,7 +250,7 @@
           "drill": 0.8
         },
         {
-          "diameter": 1.8,
+          "diameter": 2.0,
           "drill": 1.0
         },
         {
@@ -650,6 +650,38 @@
     [
       "006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d",
       "Root"
+    ],
+    [
+      "539d63da-e1ff-4f16-be2c-1db8c9db8078",
+      "ControlSensorCombo"
+    ],
+    [
+      "783eb3f9-c065-46af-bfe5-5153fc4841ee",
+      "SensorRingCombo"
+    ],
+    [
+      "ef3c5a72-1cc1-4c9a-8a32-54038ce01f00",
+      "NMOSDriver"
+    ],
+    [
+      "96435094-84f6-418b-98a8-c0137d07b4aa",
+      "BuckStepDown1"
+    ],
+    [
+      "6918b752-c4f8-49c7-b2f5-91fa140447ec",
+      "BuckStepDown"
+    ],
+    [
+      "11889f77-6f47-41c8-bab6-c95af0f40f2b",
+      "TriggerDebounce"
+    ],
+    [
+      "d346c5e5-c8a3-4b5e-a443-45f0e91c2048",
+      "NMOSDriver2"
+    ],
+    [
+      "75ae40f9-9b8a-4868-8fe7-bcc5504964b0",
+      "TriggerDebounce1"
     ]
   ],
   "text_variables": {}
