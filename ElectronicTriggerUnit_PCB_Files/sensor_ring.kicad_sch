@@ -3477,7 +3477,7 @@
 		(uuid "68b53c8d-8168-4e14-9a52-4dfa7faad2f0")
 	)
 	(label "updiRx"
-		(at 156.21 161.29 180)
+		(at 156.21 163.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3554,7 +3554,7 @@
 		(uuid "d22f7ba9-9d11-472c-80bd-4584ef567f19")
 	)
 	(label "updiTx"
-		(at 156.21 163.83 180)
+		(at 156.21 161.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
