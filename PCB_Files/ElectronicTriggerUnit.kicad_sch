@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d")
 	(paper "A4")
 	(lib_symbols)
@@ -30,6 +30,10 @@
 	(sheet
 		(at 58.42 59.69)
 		(size 43.18 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -66,8 +70,54 @@
 		)
 	)
 	(sheet
-		(at 163.83 59.69)
+		(at 147.32 59.69)
+		(size 48.26 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "567dbb32-3fa8-4c8f-b406-7d7df1e784be")
+		(property "Sheetname" "NormalEtu"
+			(at 147.32 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "normal_etu.kicad_sch"
+			(at 147.32 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ElectronicTriggerUnit"
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 59.69)
 		(size 43.18 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -78,7 +128,7 @@
 		)
 		(uuid "783eb3f9-c065-46af-bfe5-5153fc4841ee")
 		(property "Sheetname" "SensorRingCombo"
-			(at 163.83 58.9784 0)
+			(at 102.87 58.9784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87,7 +137,7 @@
 			)
 		)
 		(property "Sheetfile" "sensor_ring.kicad_sch"
-			(at 163.83 89.4846 0)
+			(at 102.87 89.4846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -108,4 +158,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

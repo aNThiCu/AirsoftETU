@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "63fa71df-21d4-42e0-92cc-cb5b80f4e95a")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -79,7 +81,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -91,7 +93,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -140,11 +142,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D_Schottky"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -212,10 +219,10 @@
 			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -236,10 +243,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -285,11 +292,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -356,32 +368,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -393,8 +381,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -442,9 +454,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -563,6 +578,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "SamacSys_Parts:AP5100WG-7"
 			(exclude_from_sim no)
@@ -678,52 +694,16 @@
 					)
 				)
 				(pin passive line
-					(at 25.4 0 180)
+					(at 0 0 0)
 					(length 5.08)
-					(name "BST"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -12.7 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -5.08 180)
-					(length 5.08)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -750,16 +730,34 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 0)
+					(at 12.7 -12.7 90)
 					(length 5.08)
-					(name "IN"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "BST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -785,7 +783,26 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 25.4 -5.08 180)
+					(length 5.08)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
@@ -863,7 +880,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -875,7 +892,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -889,7 +906,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+5V"
 						(effects
 							(font
@@ -906,6 +924,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -985,7 +1004,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1002,6 +1022,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
@@ -1079,7 +1100,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1091,7 +1112,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1105,7 +1126,8 @@
 			(symbol "VCC_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "VCC"
 						(effects
 							(font
@@ -1122,6 +1144,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1712,7 +1735,6 @@
 	)
 	(label "V_FB"
 		(at 157.48 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1723,7 +1745,6 @@
 	)
 	(label "V_FB"
 		(at 196.85 97.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1735,7 +1756,6 @@
 	(hierarchical_label "+3.3V"
 		(shape output)
 		(at 99.06 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1747,7 +1767,6 @@
 	(hierarchical_label "+12V"
 		(shape input)
 		(at 99.06 48.26 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1759,7 +1778,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 99.06 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1779,7 +1797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00934bf1-e54b-4312-9c1d-bf4a46b3cf86")
-		(property "Reference" "R13"
+		(property "Reference" "R25"
 			(at 187.96 90.1699 0)
 			(effects
 				(font
@@ -1834,15 +1852,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "ac463150-5074-4174-9f57-aef36bc04634")
+			(uuid "c23362f0-25c4-4d19-84b4-816cb790b034")
 		)
 		(pin "2"
-			(uuid "2a70df91-772f-44f1-a625-dcc8ccea729f")
+			(uuid "c11ba43d-5876-4d2c-9099-7fc75e329e20")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "R13")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "R39")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -1862,7 +1884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "011582af-44d1-4dfb-8542-c30da3208400")
-		(property "Reference" "R12"
+		(property "Reference" "R24"
 			(at 120.65 102.8699 0)
 			(effects
 				(font
@@ -1917,15 +1939,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "a056bf70-0e2f-4561-864d-02a557d224a4")
+			(uuid "e45bd068-e00b-4f4b-ba40-ebdbc4589888")
 		)
 		(pin "2"
-			(uuid "19fe19aa-75ae-4ef8-b282-8acba00d80ae")
+			(uuid "daf2a617-8ad3-4021-acfb-42f0cd3557a0")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "R12")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "R38")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -1945,7 +1971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "183d49a6-fe86-4243-9ce1-d4b467a678cd")
-		(property "Reference" "C14"
+		(property "Reference" "C25"
 			(at 201.041 92.0663 0)
 			(effects
 				(font
@@ -2000,15 +2026,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "17106ba8-65d6-4923-861c-590aa59c1e11")
+			(uuid "528859fd-22d2-4bdd-abad-c202db9a287e")
 		)
 		(pin "2"
-			(uuid "358db0c6-24ba-4f62-ab8e-8a509178f744")
+			(uuid "17962bcc-0495-468f-bf7a-7a33188fba5c")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "C14")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "C37")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2028,7 +2058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c3b7e85-5f44-45c9-99ba-eb9f0a724675")
-		(property "Reference" "C9"
+		(property "Reference" "C20"
 			(at 103.251 93.3363 0)
 			(effects
 				(font
@@ -2083,15 +2113,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "ed80be2a-91e1-4821-b35a-392c82d255b8")
+			(uuid "beb9a6b9-759c-4808-b59a-0adfd8b79b9f")
 		)
 		(pin "2"
-			(uuid "fe21fc74-958c-45d4-8df7-61ee37cc26b7")
+			(uuid "bb9b0ac5-44aa-4d72-9cb7-1d2dbcbad91d")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "C9")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "C32")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2112,7 +2146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c98ac0b-dc91-441a-93ae-ad2d8b5dc1b9")
-		(property "Reference" "R14"
+		(property "Reference" "R26"
 			(at 193.04 101.5999 0)
 			(effects
 				(font
@@ -2167,15 +2201,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "960cf513-72ce-4275-9844-c98b3b7f6c2a")
+			(uuid "153a8aa0-62a3-4841-b9c2-62a78c58f7b8")
 		)
 		(pin "2"
-			(uuid "5ec1e8be-f421-4afb-8012-f2a26e6dfbcf")
+			(uuid "4c99afa5-88e8-40f2-b5d6-fc2a9ee32341")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "R14")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "R40")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2195,7 +2233,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f14bbf9-6a7d-4fb0-ac1a-1dfd9bb81602")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR070"
 			(at 111.76 55.88 0)
 			(effects
 				(font
@@ -2240,12 +2278,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "b126b3f2-06e6-4084-b3fd-5ca8c7d08e17")
+			(uuid "fddf5863-6d31-4198-8e60-27dcd5594114")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "#PWR049")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "#PWR0123")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2265,7 +2307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "518714b9-5b69-4610-9faf-adca25728c07")
-		(property "Reference" "C11"
+		(property "Reference" "C22"
 			(at 156.21 82.4611 90)
 			(effects
 				(font
@@ -2318,15 +2360,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "a59f78eb-2447-4489-a6a0-39c443502ec5")
+			(uuid "d4e0fd51-f139-47dc-ba7d-8453470a6e4b")
 		)
 		(pin "2"
-			(uuid "4dcc018e-df0b-48d8-9f1a-1882b70df85a")
+			(uuid "daa33706-793f-4ea6-9d2e-1ecdc4cfd66d")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "C11")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "C34")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2345,7 +2391,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "529a1e3c-196d-4f82-a972-594c6652c506")
-		(property "Reference" "C13"
+		(property "Reference" "C24"
 			(at 181.229 99.6863 0)
 			(effects
 				(font
@@ -2400,15 +2446,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "45d8ea75-cea3-4d69-9830-989caee3e2f3")
+			(uuid "dcde5c16-e51d-461a-aadd-464d1964e2ec")
 		)
 		(pin "2"
-			(uuid "78be4be6-174d-4e37-a540-78a66bce5d27")
+			(uuid "db1bad5f-5573-4885-bb38-e4f2336b2aac")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "C13")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "C36")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2428,7 +2478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52c3c399-e1a2-4de6-a785-c6182ec1ffbd")
-		(property "Reference" "R11"
+		(property "Reference" "R23"
 			(at 120.65 91.4399 0)
 			(effects
 				(font
@@ -2483,15 +2533,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "bba88320-879b-489b-9fbe-3d6c8f73441e")
+			(uuid "ee5ee933-78d8-45a6-a386-da7198a94964")
 		)
 		(pin "2"
-			(uuid "2970ecf9-88ff-4f62-afaf-3c6a777ec185")
+			(uuid "3553c46e-e85e-45a0-97d3-f4f34ee47721")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "R11")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "R37")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2511,7 +2565,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ad1133a-41f8-448e-a0a0-e364f4298c78")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR073"
 			(at 190.5 86.36 0)
 			(effects
 				(font
@@ -2556,12 +2610,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc8e9574-5d33-4469-9ade-022b8c6157c5")
+			(uuid "471bbd92-84bc-4ecb-bab3-d38b506571b1")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "#PWR052")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "#PWR0126")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2580,7 +2638,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f4ebd44-51d9-411c-a5f1-88a751daf8bf")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR072"
 			(at 138.43 116.84 0)
 			(effects
 				(font
@@ -2626,12 +2684,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "e465a114-e771-4864-9dbe-db44258b2fe1")
+			(uuid "1f62ac51-a7a1-4205-8bac-b39455520b94")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "#PWR051")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "#PWR0125")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2651,7 +2713,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "784f634a-3a0b-40bb-8cd1-0e22285d7cbd")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 170.18 84.1147 90)
 			(effects
 				(font
@@ -2704,15 +2766,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "dbe921f6-efcf-419f-9008-0b1e8604d871")
+			(uuid "160be875-2c9e-4bbc-8614-2ce62da83889")
 		)
 		(pin "2"
-			(uuid "865e5862-f7f5-418e-9626-771f889a222f")
+			(uuid "dd49014a-3c9b-499b-a556-b6bc125d9fdb")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "L1")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "L3")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2732,7 +2798,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7b908843-02c4-46ba-a3b6-5d723dd603be")
-		(property "Reference" "C10"
+		(property "Reference" "C21"
 			(at 111.379 99.6863 0)
 			(effects
 				(font
@@ -2787,15 +2853,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd02a77c-f17e-4558-921c-c843e1048bf5")
+			(uuid "9237fe3a-d340-4534-a62d-b779dcc7852a")
 		)
 		(pin "2"
-			(uuid "e0d9e5bd-690c-46bd-8aa2-0c4213ef9103")
+			(uuid "35f1204b-d9d7-4ea6-b9cd-fc87545d3385")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "C10")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "C33")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2815,7 +2885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90525538-10e8-4e94-85ea-3d498d44304a")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 164.592 101.9088 90)
 			(effects
 				(font
@@ -2870,15 +2940,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "c45d33c8-db12-4209-82f8-3a889d60f1b7")
+			(uuid "f81c5ff2-cec1-4e63-9bef-0f294047183c")
 		)
 		(pin "2"
-			(uuid "c59c6d24-8a8e-492b-872b-df59d7579edd")
+			(uuid "7e9207c6-1b69-4cc0-88a6-ed4edd4d28d5")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "D3")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "D6")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2898,7 +2972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3594bfd-6779-47d9-a379-ac70d8c85c0e")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR069"
 			(at 106.68 52.07 0)
 			(effects
 				(font
@@ -2943,12 +3017,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "4372e3d1-08c9-4e69-9096-a606148098a1")
+			(uuid "b83a8983-8d26-4f74-9e49-76c1fad0e357")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "#PWR048")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "#PWR0122")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -2967,7 +3045,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e25c90e6-36d0-4c57-8726-822a0d862d71")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR071"
 			(at 111.76 62.23 0)
 			(effects
 				(font
@@ -3013,12 +3091,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "2e5ef801-19b9-4130-ae88-a56228c6b2d2")
+			(uuid "fdee5a93-b5b8-4a67-97fe-0cb345dc0add")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "#PWR050")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "#PWR0124")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -3038,7 +3120,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eda31f25-e55d-4023-9576-def313302ed3")
-		(property "Reference" "PS1"
+		(property "Reference" "PS2"
 			(at 138.43 82.0801 0)
 			(effects
 				(font
@@ -3143,27 +3225,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "008fd323-2108-4ad0-8040-65b704cf7a84")
+			(uuid "8e12a18b-1800-4692-b66d-08f8059bd25b")
 		)
 		(pin "2"
-			(uuid "52d11a06-dbf7-4e21-bd6d-545319bad92e")
+			(uuid "7327afc7-908d-4bac-8a90-59236f245457")
 		)
 		(pin "3"
-			(uuid "1e626cea-2499-43dd-86aa-7821ea0a1492")
+			(uuid "de2e0551-6e38-42ef-9988-e03917fc4c55")
 		)
 		(pin "4"
-			(uuid "08c0627d-b9fb-4e46-97b9-d68d60067da9")
+			(uuid "e00b167a-096f-428f-8a74-a94190e99abf")
 		)
 		(pin "5"
-			(uuid "1578c1f4-0985-43ec-994c-a8cedde2aa58")
+			(uuid "2a3c87d1-4233-4a5d-8648-2776d3938bc8")
 		)
 		(pin "6"
-			(uuid "ee5c9903-959a-4474-a371-a7e547efd64a")
+			(uuid "2dee5905-6a18-466b-b03c-1027411c0d87")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "PS1")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "PS3")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -3182,7 +3268,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0edf9b4-4319-4784-8e80-81b31aa6abec")
-		(property "Reference" "C12"
+		(property "Reference" "C23"
 			(at 173.609 93.3363 0)
 			(effects
 				(font
@@ -3237,15 +3323,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "201af3af-54b6-469f-8c8c-30e8fd1e843f")
+			(uuid "041dbbbd-ddc3-493b-9ec0-275c565a4205")
 		)
 		(pin "2"
-			(uuid "cf8a1ee8-d847-4a4a-8063-c150551129aa")
+			(uuid "bc7bd64c-3529-4dea-90e5-526a207a8a72")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "C12")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "C35")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"
@@ -3265,7 +3355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd2b7b8c-ad74-49b0-b2bc-6626b0361a82")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR068"
 			(at 100.33 85.09 0)
 			(effects
 				(font
@@ -3310,12 +3400,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f9df18d-1e87-4a4b-bb7c-27e25f0c4aca")
+			(uuid "086d608b-7573-4966-857c-fa21a40e798b")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/6918b752-c4f8-49c7-b2f5-91fa140447ec"
 					(reference "#PWR047")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/a9023d18-0b2d-43c7-9654-aa2d0b287c66"
+					(reference "#PWR0121")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/96435094-84f6-418b-98a8-c0137d07b4aa"

@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 //motor states
 #define STANDBY 0
 #define MOTORENABLE 1
@@ -54,7 +56,7 @@ void flag_cycle() {
 }
 
 void mode_change(){
-  if(modePin == HIGH) selectorState = AUTO;
+  if(digitalRead(modePin) == HIGH) selectorState = AUTO;
   else selectorState = SEMI;
 }
 

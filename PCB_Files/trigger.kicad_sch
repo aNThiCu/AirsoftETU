@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "7b0f4a96-9d23-4ce5-b7ff-64761cafcd37")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -79,7 +81,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -91,7 +93,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -140,9 +142,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -261,6 +266,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "SamacSys:BU4S584G2-TR"
 			(exclude_from_sim no)
@@ -466,6 +472,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "SamacSys_Parts:463092691402"
 			(pin_names
@@ -644,6 +651,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
@@ -721,7 +729,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -733,7 +741,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -747,7 +755,8 @@
 			(symbol "+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+12V"
 						(effects
 							(font
@@ -764,6 +773,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -843,7 +853,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -860,6 +871,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1042,7 +1054,6 @@
 	)
 	(label "output"
 		(at 144.78 29.21 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1053,7 +1064,6 @@
 	)
 	(label "output"
 		(at 182.88 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1065,7 +1075,6 @@
 	(hierarchical_label "trigger_Out"
 		(shape output)
 		(at 133.35 29.21 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1077,7 +1086,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 133.35 25.4 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1089,7 +1097,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 133.35 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1153,15 +1160,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "23706d9c-8730-4575-a8b1-eb2ff0445402")
+			(uuid "6105d140-f499-4643-b96a-fec2c5d83a69")
 		)
 		(pin "1"
-			(uuid "f891c89f-a131-4a87-830f-0413eec2e6f2")
+			(uuid "8cfb6f74-3809-4fb7-97f0-68c36aec7a15")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "R15")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "R35")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1277,24 +1288,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "68d10deb-656f-44ca-97ab-0afefb06b7db")
+			(uuid "994e329e-412f-48ef-9d14-93afb9ac28c5")
 		)
 		(pin "1"
-			(uuid "60de5341-bb29-4a6d-bb64-13a355c5ad27")
+			(uuid "df32772e-a47a-405a-aaea-24091d880b1b")
 		)
 		(pin "5"
-			(uuid "ffc09da4-a928-4751-aba6-8abca92f3914")
+			(uuid "de178c0f-fc02-4c7f-9864-b3034b5e7bf5")
 		)
 		(pin "2"
-			(uuid "538eae0d-a451-4ca6-aaf5-88dc50442164")
+			(uuid "ffb194c4-3168-4a6b-897b-455f2079ce88")
 		)
 		(pin "3"
-			(uuid "9cc73040-2d22-4bc0-926a-ca1e53145d99")
+			(uuid "f2a39b15-85f6-46e3-b48c-078745492b1a")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "IC4")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "IC8")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1357,15 +1372,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "317bd933-8134-4d29-85b4-f6c6a4e97c58")
+			(uuid "53e42528-6949-45b9-8229-f978ac6459eb")
 		)
 		(pin "1"
-			(uuid "83e48ffb-4edb-481d-8fcc-efd71d247983")
+			(uuid "6d5facf6-93fd-4ce9-bb12-0e8438af9242")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "R16")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "R36")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1430,12 +1449,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "00763e8a-4b6c-47e6-b0f6-c8c671ad39d1")
+			(uuid "d231208a-0748-463f-9203-0a9c68c16795")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "#PWR056")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "#PWR0117")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1498,15 +1521,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "60cd3a63-0312-438b-93be-b399b001c603")
+			(uuid "ed18fc44-b90e-4468-b115-f0dab8caac42")
 		)
 		(pin "2"
-			(uuid "e3aa423e-b7b2-418b-8f39-0792b28b9cea")
+			(uuid "ae73d9ac-80c1-476a-80ba-670b71f1c949")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "C15")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "C31")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1571,12 +1598,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "d5ac0d63-25c4-4fa4-a83c-6159f8fd8c7d")
+			(uuid "4cdbb9de-c421-4e1a-8b7c-69edee910494")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "#PWR058")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "#PWR0119")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1641,12 +1672,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "8ba586c9-fc2e-4fdc-b7ec-74c6d946f4ba")
+			(uuid "880fcddb-7cfa-4a8e-a7b9-96d21d260a2c")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "#PWR055")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1711,12 +1746,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "a619cf27-7625-4ade-b5ff-c4e688e89e37")
+			(uuid "fdb482b6-73b4-4581-bffd-e4103a91edba")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "#PWR057")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "#PWR0118")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1781,12 +1820,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "1420ebbf-9a27-45b9-b465-6f82f81d123b")
+			(uuid "fc263fad-fae9-4245-8c5d-72106233f37b")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "#PWR054")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1851,12 +1894,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "1e23477e-5ad1-43a2-8e56-ff3778585926")
+			(uuid "55b1a0a4-fd02-4280-818e-533dca223745")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "#PWR053")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "#PWR0114")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -1921,12 +1968,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "8ed7d660-ee49-469e-8d1f-5b8a112d4352")
+			(uuid "9cb385db-0c65-45f2-b585-27d05b59f6f1")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "#PWR059")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "#PWR0120")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
@@ -2044,18 +2095,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "35936f42-f01c-4338-9b7e-55268746b6c4")
+			(uuid "c518e4fc-7b26-49c4-b3c1-4801b2122044")
 		)
 		(pin "2"
-			(uuid "c640b5fe-f962-4c86-9543-df4e429db2dc")
+			(uuid "7a255b54-19de-45d3-96e2-6581a3620f2f")
 		)
 		(pin "3"
-			(uuid "d9517d50-661d-42ba-a4d4-62ee0804deb6")
+			(uuid "ebcf15c1-5a7c-4075-8dc1-dde83e28d978")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/539d63da-e1ff-4f16-be2c-1db8c9db8078/11889f77-6f47-41c8-bab6-c95af0f40f2b"
 					(reference "S1")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/567dbb32-3fa8-4c8f-b406-7d7df1e784be/58e5875a-1585-4163-b283-abc7d3b519af"
+					(reference "S3")
 					(unit 1)
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/75ae40f9-9b8a-4868-8fe7-bcc5504964b0"
