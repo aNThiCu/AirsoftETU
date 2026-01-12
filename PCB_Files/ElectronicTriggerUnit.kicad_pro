@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.9,
-          "width": 0.9
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -722,6 +722,22 @@
     ],
     [
       "58e5875a-1585-4163-b283-abc7d3b519af",
+      "TriggerDebounce"
+    ],
+    [
+      "ce696737-855e-412d-b31c-62c6ac08a08e",
+      "BuckStepDown"
+    ],
+    [
+      "980201f8-8dc5-41cd-86ea-9e8d02f3972d",
+      "LayeredEtu"
+    ],
+    [
+      "3dc01c8a-515b-4f5f-8626-294ae29ee0b9",
+      "NMOSDriver"
+    ],
+    [
+      "1fe26ba4-cb10-44a8-91b8-3a27057396de",
       "TriggerDebounce"
     ]
   ],

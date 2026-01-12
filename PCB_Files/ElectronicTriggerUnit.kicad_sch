@@ -153,6 +153,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 198.12 59.69)
+		(size 38.1 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "980201f8-8dc5-41cd-86ea-9e8d02f3972d")
+		(property "Sheetname" "LayeredEtu"
+			(at 198.12 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "layered_etu.kicad_sch"
+			(at 198.12 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ElectronicTriggerUnit"
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d"
+					(page "14")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

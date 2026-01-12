@@ -1655,7 +1655,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e850f23f-4a61-49b5-83a3-2e468743cd5c")
+			(uuid "432b6a69-311c-4943-8a87-ba655b505354")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -1669,6 +1669,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0101")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0166")
 					(unit 1)
 				)
 			)
@@ -1730,7 +1734,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "eeb246d2-11a9-4747-a317-02ba6727f4c7")
+			(uuid "0134c470-7c7b-4c49-8971-1b95aa144a58")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -1744,6 +1748,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0104")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0167")
 					(unit 1)
 				)
 			)
@@ -1804,10 +1812,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "2faf6a1d-3c4d-4b2c-a771-650a7cfda591")
+			(uuid "4168af34-0c97-4883-8cfe-417a31d94dcd")
 		)
 		(pin "2"
-			(uuid "9724462b-ae7c-4f4e-bf6b-daf932cfbec6")
+			(uuid "fb3094b6-d4a3-44be-9e97-8de1ba815631")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -1821,6 +1829,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "R10")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -1882,7 +1894,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5debcb99-2a0a-4c56-a9d5-9142854b52c3")
+			(uuid "ba6123d5-8e23-44dd-b062-9ee70e618278")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -1896,6 +1908,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0106")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -1981,31 +1997,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "f066f81a-b62a-4f8d-9d2a-8654b94825fb")
+			(uuid "89dc72a5-26e4-4b76-a5e8-fa7933536a49")
 		)
 		(pin "2"
-			(uuid "b1cdb282-fb4d-4f79-9672-2a4c6e3f5a40")
+			(uuid "816f3519-a3d6-44f6-b480-4e37bd34c80a")
 		)
 		(pin "3"
-			(uuid "5f231ea8-0ebe-4a72-82df-b41ed5ab4b5c")
+			(uuid "1a52e932-b5e5-4293-a4b6-e8ec242d658f")
 		)
 		(pin "4"
-			(uuid "75f7a47a-fa67-41c6-9499-bf3d4eb6335f")
+			(uuid "86585629-ebab-43f4-ab10-85b37eb7dcc2")
 		)
 		(pin "5"
-			(uuid "df08e40f-b299-45b4-8465-331f16fc11f7")
+			(uuid "aa78a9bf-07d6-4aae-8b9a-53975e749250")
 		)
 		(pin "6"
-			(uuid "4fe4325b-b285-45fc-8ce7-227436c532e1")
+			(uuid "9db1d287-f36b-40fc-885c-b50ef5ac0b32")
 		)
 		(pin "7"
-			(uuid "88b9a5ba-0d83-4742-94f7-fcb6123dabc5")
+			(uuid "3b26b1d8-0e08-4806-aa04-be1539cb12a9")
 		)
 		(pin "8"
-			(uuid "468e7d3b-270f-4d6a-9774-83ae9fcb09dc")
+			(uuid "564e7890-f55f-4bb8-97fb-8ccc2164da2f")
 		)
 		(pin "9"
-			(uuid "c8ab1fae-8954-4679-abb5-0e62fdcbd278")
+			(uuid "a0938c50-e088-4061-aa74-6f0aeacd6332")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2019,6 +2035,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "Q4")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "Q12")
 					(unit 1)
 				)
 			)
@@ -2080,7 +2100,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "7fddbc8b-b9d4-4b00-ae9f-a622affcabce")
+			(uuid "75761b01-7a60-4b4c-acc3-0b678bf887da")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2094,6 +2114,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0108")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)
@@ -2155,10 +2179,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f49e6cd8-b24e-427f-930d-fe787ef696de")
+			(uuid "570e9177-cdd1-4701-8fae-94a9c7a99758")
 		)
 		(pin "2"
-			(uuid "b19c842c-7d0f-4ff4-a1f9-08452b9bfb65")
+			(uuid "8a6c5eac-c497-4324-83ff-8a1277af8ae6")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2172,6 +2196,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "R9")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -2283,28 +2311,28 @@
 			)
 		)
 		(pin "6"
-			(uuid "4a8fee2b-f0d7-4265-8a85-f81e737f78b8")
+			(uuid "d52b630b-76b3-4a6d-ba42-abc7ce4f339b")
 		)
 		(pin "3"
-			(uuid "7ec41018-22ea-47ec-9987-df17261b5ee5")
+			(uuid "15bff4ce-bb64-42dd-8f67-b2e261fa9ab6")
 		)
 		(pin "1"
-			(uuid "1b6d9591-e5d3-4352-b0ae-1737191cb598")
+			(uuid "6042d7cf-1ff8-4ad8-87f0-07e5cd8efa82")
 		)
 		(pin "4"
-			(uuid "c0add5cd-2034-40b3-b606-f9c2e7d74667")
+			(uuid "f0329e92-f857-40f1-aac8-b07e4706a3a4")
 		)
 		(pin "8"
-			(uuid "4e17f4e5-742f-4efa-834f-481310c69bb7")
+			(uuid "4ea4c99c-107e-4e25-a7db-2b4c0666a94d")
 		)
 		(pin "7"
-			(uuid "a796a1f3-f783-4eb4-965b-6a0513d94806")
+			(uuid "8c2cb163-b830-4922-bffe-d7f8b6909786")
 		)
 		(pin "5"
-			(uuid "42778805-04d9-4559-925a-8f227347c6c8")
+			(uuid "483edcb3-5d1b-4b65-9b4a-3f190ffb5db5")
 		)
 		(pin "2"
-			(uuid "a4607f90-6e2a-4e65-aa7e-3ae06ebac723")
+			(uuid "231e1db6-b7a3-46e8-acb5-6918659efc1c")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2318,6 +2346,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "IC3")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "IC11")
 					(unit 1)
 				)
 			)
@@ -2378,7 +2410,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3de81d9-44a0-4d4b-86cc-05102cd8f54e")
+			(uuid "c22270c2-029f-41bf-833a-d28c7b48cf5c")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2392,6 +2424,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0107")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -2453,7 +2489,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3b8e1e93-a774-4800-a683-bd821ad4cb01")
+			(uuid "00075b23-fc8c-40fb-8dad-b50faee1081b")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2467,6 +2503,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0105")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0171")
 					(unit 1)
 				)
 			)
@@ -2528,7 +2568,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9021deaa-6095-40c9-b404-f72cc2fa40a2")
+			(uuid "b92c0c53-de62-4165-be75-27ffcf1825b3")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2542,6 +2582,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -2565,7 +2609,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 101.6 87.6299 0)
 			(effects
 				(font
@@ -2602,10 +2646,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c521773d-da37-4162-bad9-d473fbc52340")
+			(uuid "5e4fb01a-d513-42e2-a492-803a89c5d207")
 		)
 		(pin "2"
-			(uuid "2b54423b-62fc-4204-9142-79e45de6c075")
+			(uuid "11a81780-ff8d-4d5b-bf31-3cbbae3fcd18")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2619,6 +2663,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "C7")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -2678,7 +2726,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1eca1e56-f2fd-435b-bd06-e6e67a2df470")
+			(uuid "a19dd05f-9686-455f-b927-d90ebda2d6d7")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2692,6 +2740,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "#PWR0103")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "#PWR0170")
 					(unit 1)
 				)
 			)
@@ -2715,7 +2767,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "10u"
 			(at 112.014 87.63 0)
 			(effects
 				(font
@@ -2752,10 +2804,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc885bbf-b6ef-4a49-b2ad-1ee806b09e04")
+			(uuid "ac03293e-5871-4973-96ea-03de342e431d")
 		)
 		(pin "2"
-			(uuid "d745bf7d-0482-47df-bfd6-99af86118524")
+			(uuid "23e12fb9-deaa-4966-a01e-212eec2a9fc5")
 		)
 		(instances
 			(project "ElectronicTriggerUnit"
@@ -2769,6 +2821,10 @@
 				)
 				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/783eb3f9-c065-46af-bfe5-5153fc4841ee/d346c5e5-c8a3-4b5e-a443-45f0e91c2048"
 					(reference "C8")
+					(unit 1)
+				)
+				(path "/006bc43b-d3a8-4a38-a8dc-5a24da3f9b4d/980201f8-8dc5-41cd-86ea-9e8d02f3972d/3dc01c8a-515b-4f5f-8626-294ae29ee0b9"
+					(reference "C51")
 					(unit 1)
 				)
 			)
