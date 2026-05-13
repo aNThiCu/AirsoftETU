@@ -5,28 +5,28 @@ This revision still is in no way usable , as i haven't been able to test any of 
 I've been using a board with no power electronics until now for testing the signal complementarity and overall logic of the system.
 
 Hardware changes made from the last readme update:
-   -added back the high side pmos , board cannot function without it as freewheel diode would blow
-   -added back the mode selector phototransistors and led
-   -added a schmitt trigger for hardware debounce
-   -added proper gate drivers , MCP1416T-E
-   -added some ESD protection diodes on the gates of the power FETS and 12v power rail
-   -moved leds to the 3.3v rail
-   -modified shape of PCB for better fitment
+
+ - added back the high side pmos , board cannot function without it as freewheel diode would blow
+ - added back the mode selector phototransistors and led-added a schmitt trigger for hardware debounce
+ - added proper gate drivers , MCP1416T-E
+ - added some ESD protection diodes on the gates of the power FETS and 12v power rail
+ - moved leds to the 3.3v rail
+ - modified shape of PCB for better fitment
 
 Software changes made from the last readme update:
-   -configurable duty cycle, not tested actual usable range , over 90% is considered 100% due to dead_time limitations
-   -configurable dead time ticks for pwm , 1 tick = 200ns , good for different types of power mosfets
-   -implemented synchronous rectification to take the burden off the flywheel diode 
-   -changed driving logic to permit both PWM and on/off
-   -added burst mode capability
-   -changed to platformio
+   - configurable duty cycle, not tested actual usable range , over 90% is considered 100% due to dead_time limitations
+   - configurable dead time ticks for pwm , 1 tick = 200ns , good for different types of power mosfets
+   - implemented synchronous rectification to take the burden off the flywheel diode 
+   - changed driving logic to permit both PWM and on/off
+   - added burst mode capability
+   - changed to platformio
 
 What's coming next:
-   -finishing testing with new pcb and firmware
-   -troubleshooting indicators, buzzer for quick configs in the upcoming settings tab
-   -folder with everything needed for direct manufacturing from a factory
-   -might do a different type of trigger , either optical of magnetic , for longevity sake , i like the clicking feel of microswitches more though
+   - finishing testing with new pcb and firmware
+   - troubleshooting indicators, buzzer for quick configs in the upcoming settings tab
+   - folder with everything needed for direct manufacturing from a factory
+   - might do a different type of trigger , either optical of magnetic , for longevity sake , i like the clicking feel of microswitches more though
    
 What's been marked done from last readme update:
-   -configurable mode selector switch with multiple modes
-   -redo of shape for better fitment in V2 gearboxes
+   - configurable mode selector switch with multiple modes
+   - redo of shape for better fitment in V2 gearboxes
