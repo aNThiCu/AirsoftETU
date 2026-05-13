@@ -2,6 +2,11 @@ ElectronicTriggerUnit-backups/
 ElectronicTriggerUnit.kicad_prl
 ElectronicTriggerUnit.kicad_sch-bak
 ElectronicTriggerUnit.xml
+ETU_AIO-backups/
+ETU_AIO.kicad_prl
+ETU_AIO.kicad_sch-bak
+~ETU_AIO.kicad_pro.lck
+~ETU_AIO.kicad_sch.lck
 fp-info-cache
 output/
 Driver-backups/

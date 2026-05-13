@@ -1,21 +1,32 @@
-This is untested , unstable hardware. The main focus of this version was creating more room for upgrades and manufacturability at home.
+Latest board is very promising , i have semi-abandoned the idea of separating the controls and power components from the sensors. The board is now a 4 layer consisting of GND-3.3V-GND-GND copper pours.
+Pcb manufacturing at home sadly cannot fullfill my needs for this project , future versions will not be able to be manufactured in house as i have finished some of the testing needed for a complete product.
 
-The hardware now consists of 2 PCB's one being the control center and the other the necessary sensors. This makes the board be less prone to shorts or mechanical stress from the gearbox of the replica.
-The control board will sit inside the buffer tube while the sensor board will stay in the same position.
+This revision still is in no way usable , as i haven't been able to test any of the new software implementations. I just finished the firmware and i am about to go on with assembling the rest of the PCB.
+I've been using a board with no power electronics until now for testing the signal complementarity and overall logic of the system.
 
-Being able to make the PCB's at home saves a whole lot of time so the following changes have been made:
+Hardware changes made from the last readme update:
+   -added back the high side pmos , board cannot function without it as freewheel diode would blow
+   -added back the mode selector phototransistors and led
+   -added a schmitt trigger for hardware debounce
+   -added proper gate drivers , MCP1416T-E
+   -added some ESD protection diodes on the gates of the power FETS and 12v power rail
+   -moved leds to the 3.3v rail
+   -modified shape of PCB for better fitment
 
-    -thick traces of 0.5 width and up , resulting in the need of a less precise CNC
-    -most of the traces are only on the front side , thanks to splitting the components across 2 boards
-    -components added/modified for protection and well functioning of the boards
-    -switched from 5V LDO to 3.3V buck , microcontroller shouldn't reset anymore while using low discharge rate battery
+Software changes made from the last readme update:
+   -configurable duty cycle, not tested actual usable range , over 90% is considered 100% due to dead_time limitations
+   -configurable dead time ticks for pwm , 1 tick = 200ns , good for different types of power mosfets
+   -implemented synchronous rectification to take the burden off the flywheel diode 
+   -changed driving logic to permit both PWM and on/off
+   -added burst mode capability
+   -changed to platformio
 
- What's coming next (hopefully):
-
-    -configurable mode selector switch with multiple modes
-    -app for ease of use (mby)
-    -troubleshooting indicators
-    -folder with everything needed for direct manufacturing from a factory
-    -different trigger version (optical/magnetic)
-    -stress testing results
-    -redo of shape for better fitment in V2 gearboxes
+What's coming next:
+   -finishing testing with new pcb and firmware
+   -troubleshooting indicators, buzzer for quick configs in the upcoming settings tab
+   -folder with everything needed for direct manufacturing from a factory
+   -might do a different type of trigger , either optical of magnetic , for longevity sake , i like the clicking feel of microswitches more though
+   
+What's been marked done from last readme update:
+   -configurable mode selector switch with multiple modes
+   -redo of shape for better fitment in V2 gearboxes
